@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+    <title>Touch Web Site</title>
+    <link rel="stylesheet" href="http://dev.sencha.com/deploy/touch/resources/css/sencha-touch.css" type="text/css">
+    <script type="text/javascript" src="http://dev.sencha.com/deploy/touch/sencha-touch.js"></script>
+    <script type="text/javascript" src="tori.simple.carousel.js"></script>
+    <style>
+      /* display:none にしておかないとiPhoneでうまく動かないため */
+      .slide {
+        display: none;
+      }
+
+      .slide_body h1{
+        font-weight: bold;
+        font-size: 1.2em;
+        padding-top: 2px;
+        padding-left: 2px;
+      }
+
+      .slide_body p{
+        margin-top: 3px;
+        margin-left: 5px;
+      }
+
+      .slide_body ol{
+        list-style: decimal none outside;
+        margin-top: 3px;
+        margin-left: 10px;
+      }
+
+      .slide_body ol li{
+        list-style: decimal none outside;
+      }
+      
+      .slide_body ul{
+        list-style: disc none outside;
+        margin-top: 3px;
+        margin-left: 25px;
+      }
+
+      .slide_body ul li{
+        list-style: disc none outside;
+      }
+      
+      .slide_body pre {
+        white-space: pre-wrap;
+        margin:5px;
+        margin-left: 10px;
+        padding: 3px;
+        border: dashed 1px #444;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="slide">
+      <h1></h1>
+      <div class="content">
+        <div class="slide_body">
+          <h1>Tori.simple.Carousel</h1>
+          <p>Tori.simple.CrouselはHTMLをスマートフォン対応のカルーセル形式アプリケーションに変換するプログラムです。利用に際しては<a href="http://extjs.co.jp/products/touch/" target="_blank">Sencha Touch</a>が必要です。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide">
+      <h1>使い方１</h1>
+      <div class="content">
+        <div class="slide_body">
+          <p>使い方はとても簡単で、まずは以下の様なHTMLを用意します：</p>
+          <pre><code>&lt;div class="slide"&gt;
+  &lt;h1&gt;スライドのタイトル&lt;/h1&gt;
+  &lt;div class="content"&gt;
+    スライドの中身
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      
+          <ul>
+          <li>スライドの数だけ <code>class="slide"</code> のDIVタグを用意する</li>
+          <li>スライドのタイトルをDIVタグ内のH1タグとして記述</li>
+          <li>スライドの本体を <code>class="content"</code> のDIVタグ内に記述</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide">
+      <h1>使い方２</h1>
+      <div class="content">
+        <div class="slide_body">
+          <p>あとはSencha TouchとSimpleCarouselのコードを読み込む：</p>
+          <pre><code>&lt;link rel="stylesheet" href="[Sencha Touchへのパス]/resources/css/sencha-touch.css" type="text/css"&gt;
+&lt;script type="text/javascript" src="http:[Sencha Touchへのパス]/sencha-touch.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="tori.simple.carousel.js"&gt;&lt;/script&gt;
+&lt;style&gt;
+スライド用のスタイル設定を記述（あるいはスタイルシートを用意）
+&lt;/style&gt;</code></pre>
+          <ul>
+          <li>Sencha Touchのスタイルシート（sencha-touch.css）を読み込む</li>
+          <li>Sencha Touchの本体（sencha-touch.js）を読み込む</li>
+          <li>SimpleCarousel（tori.simple.carousel）を読み込む</li>
+          <li>スライドの用のスタイルシート（独自に用意）を読み込む</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide">
+      <h1>操作方法</h1>
+      <div class="content">
+        <div class="slide_body">
+          <ul>
+          <li>画面上の「戻る」「次へ」ボタンで左右に移動します</li>
+          <li>画面を右左にフリックすることでも左右に移動できます</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide">
+      <h1>リンク</h1>
+      <div class="content">
+        <div class="slide_body">
+          <ul>
+          <li><a href="http://extjs.co.jp/products/touch" target="_blank">Sencha Touch</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
