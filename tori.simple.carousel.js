@@ -62,10 +62,10 @@ Tori.simple.Carousel = Ext.extend(Ext.Carousel,{
           html: itm.down(this.slideContentSelector).getHTML(),
           slideTitle: itm.down(this.slideTitleSelector).getHTML()
         });  
-      });
+      },this);
 
       this.items = items;
-      this.dockedItems = this.generateDockedItems();
+      this.dockedItems = this.generateDockedItems(items[0].slideTitle);
     }
 
     Tori.simple.Carousel.superclass.initComponent.apply(this,arguments);
@@ -78,11 +78,11 @@ Tori.simple.Carousel = Ext.extend(Ext.Carousel,{
   },
 
   // DockedItemsのコンフィグを生成
-  generateDockedItems: function(){
+  generateDockedItems: function(title){
     return [{
       dock: 'top',  
       xtype: 'toolbar',
-      title: items[0].slideTitle,
+      title: title || '',
       items: [{
         xtype: 'button',
         ui: 'back',
