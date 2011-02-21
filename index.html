@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="http://dev.sencha.com/deploy/touch/resources/css/sencha-touch.css" type="text/css">
     <script type="text/javascript" src="http://dev.sencha.com/deploy/touch/sencha-touch.js"></script>
     <script type="text/javascript" src="tori.simple.carousel.js"></script>
+		<script>
+			Ext.setup({ fullscreen: true, onReady: function(){ new Tori.simple.Carousel({ fullscreen: true }); } });
+		</script>
     <style>
       /* display:none にしておかないとiPhoneでうまく動かないため */
       .slide {

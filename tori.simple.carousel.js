@@ -1,11 +1,14 @@
-(function(){
-
+/**
+ * 起動例
+ 
 Ext.setup({
   fullscreen: true,
   onReady: function(){
     new Tori.simple.Carousel({ fullscreen: true });
   }
 });
+
+*/
 
 Ext.ns('Tori','Tori.simple');
 
@@ -131,4 +134,4 @@ Tori.simple.Carousel = Ext.extend(Ext.Carousel,{
   }
 });
 
-})();
+
